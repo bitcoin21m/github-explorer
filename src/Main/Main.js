@@ -26,7 +26,6 @@ const Main = () => {
     // initiaties the calls
     const searchHandler = async () => {
         const orgResult = await API.getOrganization(searchValue, { setLoader, absolutePath: false, paginated: false });
-        console.log(orgResult)
         if(!orgResult?.message) setOrganization(orgResult);
         else setError({
             message: orgResult.message
