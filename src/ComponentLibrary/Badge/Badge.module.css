@@ -1,0 +1,23 @@
+.badge-wrapper {
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 13px;
+    width: fit-content;
+}
+
+.default {
+    background-color: #444;
+}
+
+.danger {
+    background-color: #f44336;
+}
+
+.warning {
+    background-color: #edd500;
+}
+
+.primary {
+    background-color: #2196f3;
+}

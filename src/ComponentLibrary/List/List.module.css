@@ -1,0 +1,9 @@
+.list-component {
+    list-style-type: none;
+    background-color: transparent;
+    margin: 0;
+    padding-left: 0;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import { createContext, useState } from 'react';
 import './App.css';
+import Header from './Header/Header';
+import Main from './Main/Main';
+import Loader from './ComponentLibrary/Loader/Loader';
 
-function App() {
+// establish context
+export const ctx = createContext();
+
+const App = () => {
+  // states
+  const [loader, setLoader] = useState(false);
+
+  // initialize context data
+  const ctxData = {
+    loader,
+    setLoader,
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ctx.Provider value={ctxData}>
+        { loader && <Loader /> }
+        <Header />
+        <Main />
+      </ctx.Provider>
+    </>
   );
-}
+};
 
 export default App;

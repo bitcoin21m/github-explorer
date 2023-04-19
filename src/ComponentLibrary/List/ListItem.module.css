@@ -1,0 +1,10 @@
+.list-item-component {
+    width: 100%;
+    padding: 20px 10px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.list-item-component:hover {
+    background-color: #f9f7f7;
+    cursor: pointer;
+}

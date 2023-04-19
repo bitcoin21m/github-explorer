@@ -1,0 +1,21 @@
+.button-component {
+    font-size: 16px;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 0;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+}
+
+.active {
+    color: #fff;
+    background-color: #2196f3;
+}
+
+.disabled {
+    color: #444;
+    background-color: #f0f0f0;
+}

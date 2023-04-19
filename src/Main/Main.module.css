@@ -1,0 +1,24 @@
+.wrapper {
+    margin: 0 10%;
+    text-align: center;
+}
+
+.search-wrapper {
+    margin: 5% 20%;
+    text-align: center;
+}
+
+.searchBoxWrapper {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.main-content-flex-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcomeTitle {
+    font-size: 30px;
+    font-weight: 200;
+}
