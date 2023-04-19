@@ -10,7 +10,6 @@ const Errors = (props) => {
     // determine what error message to display
     const getErrorContent = () => {
         let content;
-        console.log(message)
         switch(message) {
             case "Not Found":
                 content = constant.ERROR_USER_NOT_FOUND;
