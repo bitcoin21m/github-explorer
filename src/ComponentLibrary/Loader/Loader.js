@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import styles from './Loader.module.css';
-import * as constant from '../../Helpers/Constants';
+import { EMPTY_STRING } from '../../Helpers/Constants';
 
 const Loader = () => {
     // states
-    const [loadAnimation, setLoadAnimation] = useState(constant.EMPTY_STRING);
+    const [loadAnimation, setLoadAnimation] = useState(EMPTY_STRING);
 
     // initialization of loading animation
     useEffect(() => {

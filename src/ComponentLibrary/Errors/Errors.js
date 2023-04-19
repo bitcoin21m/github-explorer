@@ -1,5 +1,5 @@
 import styles from './Errors.module.css';
-import * as constant from '../../Helpers/Constants';
+import { ERROR_USER_NOT_FOUND, ERROR_API_RATE_LIMIT } from '../../Helpers/Constants';
 
 const Errors = (props) => {
     // props
@@ -12,10 +12,10 @@ const Errors = (props) => {
         let content;
         switch(message) {
             case "Not Found":
-                content = constant.ERROR_USER_NOT_FOUND;
+                content = ERROR_USER_NOT_FOUND;
                 break;
-            case constant.ERROR_API_RATE_LIMIT:
-                content = constant.ERROR_API_RATE_LIMIT;
+            case ERROR_API_RATE_LIMIT:
+                content = ERROR_API_RATE_LIMIT;
                 break;
             default:
                 break;

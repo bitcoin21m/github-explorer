@@ -7,13 +7,13 @@ import { ctx } from "../App";
 import Description from "./Description/Description";
 import Repositories from "./Repositories/Repositories";
 import Errors from "../ComponentLibrary/Errors/Errors";
-import * as constant from '../Helpers/Constants';
+import { TITLE_WELCOME, EMPTY_STRING } from '../Helpers/Constants';
 
 const Main = () => {
     // states
     const [organization, setOrganization] = useState(null);
     const [repositories, setRepositories] = useState(null);
-    const [searchValue, setSearchValue] = useState(constant.EMPTY_STRING);
+    const [searchValue, setSearchValue] = useState(EMPTY_STRING);
     const [btnDisabled, setBtnDisabled] = useState(true);
     const [error, setError] = useState(null);
 
@@ -58,7 +58,7 @@ const Main = () => {
     return (
         <div className={styles.wrapper}>
              <div className={styles['search-wrapper']}>
-                <p className={styles.welcomeTitle}>{constant.TITLE_WELCOME}</p>
+                <p className={styles.welcomeTitle}>{TITLE_WELCOME}</p>
                 <div className={styles.searchBoxWrapper}>
                     <Input 
                         type={'text'} 
