@@ -7,7 +7,6 @@ import { useMemo } from 'react';
 const Repositories = (props) => {
     // props
     const { repos } = props;
-    console.log(props)
 
     // cycles through the repos and calculates the percentage use of the languages
     const langList = useMemo(() => {
