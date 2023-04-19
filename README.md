@@ -5,5 +5,5 @@ Welcome to the GitHub Explorer. You can find your favorite repos by searching by
 To get the application running:
 
 1) Clone the repo
-2) NPM Install
-3) NPM Start...and that's it
+2) npm install
+3) npm run start...and that's it
